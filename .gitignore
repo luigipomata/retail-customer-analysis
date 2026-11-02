@@ -1,0 +1,62 @@
+# Dati grezzi e processati (file pesanti, non versionati)
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.xls
+*.zip
+*.parquet
+*.pkl
+*.feather
+*.h5
+*.db
+*.sqlite
+
+# Deliverable Excel versionati (eccezione alla regola generica sopra)
+!excel/analisi_vendite_whatif.xlsx
+!excel/customer_rfm.csv
+
+# Credenziali e configurazioni sensibili
+.env
+.env.*
+*.env
+!.env.example
+secrets.*
+credentials.*
+config.local.*
+*.key
+*.pem
+
+# Notebook Jupyter - checkpoint
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Log, file temporanei e backup
+*.log
+*.tmp
+*.bak
+
+# File di sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Output Excel/dashboard temporanei
+excel/~$*
+~$*.xlsx
+~$*.xls
+
+# Editor
+.vscode/
+.idea/
